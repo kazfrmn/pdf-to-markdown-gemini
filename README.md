@@ -31,9 +31,29 @@ A Python program that converts PDF files to Markdown format using Google's Gemin
    ```
 
 3. Install Poppler (required for PDF processing):
-   - **Windows**: Download from [poppler releases](https://blog.alivate.com.au/poppler-windows/) and add to PATH
-   - **macOS**: `brew install poppler`
-   - **Linux**: `sudo apt-get install poppler-utils`
+    - **Windows**: Download from [poppler releases](https://blog.alivate.com.au/poppler-windows/) and add to PATH
+    - **macOS**: `brew install poppler`
+    - **Linux**: `sudo apt-get install poppler-utils`
+
+## How to Use
+
+1. Ensure you have completed the Installation and Configuration steps above.
+2. Prepare your PDF file.
+3. Run the converter:
+
+   **On Linux/macOS (bash):**
+   ```bash
+   python -m src.main path/to/your/document.pdf
+   ```
+
+   **On Windows (Command Prompt or PowerShell):**
+   ```cmd
+   python -m src.main path\to\your\document.pdf
+   ```
+
+4. Check the output directory for the generated Markdown files.
+
+For more advanced options, see the [Usage](#usage) section below.
 
 ## Configuration
 
